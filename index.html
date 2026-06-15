@@ -1,0 +1,1616 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Interplásticos – Empaques Plásticos de Alta Calidad | Ciudad de México
+    </title>
+    <meta
+      name="description"
+      content="Empresa mexicana líder en empaques plásticos para la industria de la salud, higiene y belleza. Más de 50 años de experiencia. Película tubular, cast film, guanteo e impresión flexográfica."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --navy: #1a365d;
+        --navy-dk: #0f2340;
+        --navy-md: #1e4080;
+        --blue: #3182ce;
+        --blue-lt: #4299e1;
+        --blue-xlt: #ebf8ff;
+        --ice: #f7fafc;
+        --white: #ffffff;
+        --slate: #e2e8f0;
+        --muted: #718096;
+        --text: #2d3748;
+        --text-lt: #4a5568;
+        --accent: #f6ad55;
+        --ff-head: "Barlow Condensed", sans-serif;
+        --ff-body: "Inter", sans-serif;
+        --shadow-sm:
+          0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+        --shadow-md:
+          0 4px 16px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.07);
+        --shadow-lg:
+          0 10px 40px rgba(0, 0, 0, 0.14), 0 4px 12px rgba(0, 0, 0, 0.08);
+        --r: 10px;
+        --r-lg: 16px;
+        --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+      body {
+        font-family: var(--ff-body);
+        color: var(--text);
+        background: var(--white);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* ── NAV ─────────────────────────────────────── */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: rgba(10, 25, 50, 0.92);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 0 clamp(1rem, 5vw, 3rem);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+        transition: background var(--transition);
+      }
+      .nav-logo {
+        font-family: var(--ff-head);
+        font-size: 1.55rem;
+        font-weight: 800;
+        color: var(--white);
+        letter-spacing: 0.04em;
+        text-decoration: none;
+      }
+      .nav-logo span {
+        color: var(--blue-lt);
+      }
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+      .nav-links a {
+        color: rgba(255, 255, 255, 0.82);
+        text-decoration: none;
+        font-size: 0.88rem;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        transition: color var(--transition);
+      }
+      .nav-links a:hover {
+        color: var(--blue-lt);
+      }
+      .nav-cta {
+        background: var(--blue);
+        color: var(--white);
+        border: none;
+        cursor: pointer;
+        padding: 0.55rem 1.35rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: 0.04em;
+        transition:
+          background var(--transition),
+          transform var(--transition);
+      }
+      .nav-cta:hover {
+        background: var(--blue-lt);
+        transform: translateY(-1px);
+      }
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+      }
+
+      /* ── HERO ─────────────────────────────────────── */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        background: url("media/fondo-isa.png") center center / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 clamp(1.5rem, 8vw, 7rem);
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          105deg,
+          rgba(10, 25, 50, 0.9) 0%,
+          rgba(15, 35, 64, 0.78) 50%,
+          rgba(15, 35, 64, 0.4) 100%
+        );
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 680px;
+        padding-top: 5rem;
+      }
+      .hero-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(49, 130, 206, 0.2);
+        border: 1px solid rgba(49, 130, 206, 0.45);
+        color: var(--blue-lt);
+        padding: 0.35rem 0.9rem;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 1.4rem;
+      }
+      .hero-eyebrow i {
+        font-size: 0.72rem;
+      }
+      .hero h1 {
+        font-family: var(--ff-head);
+        font-size: clamp(2.6rem, 6vw, 4.4rem);
+        font-weight: 800;
+        color: var(--white);
+        line-height: 1.04;
+        letter-spacing: 0.01em;
+        margin-bottom: 1.2rem;
+      }
+      .hero h1 .hl {
+        color: var(--blue-lt);
+      }
+      .hero-sub {
+        color: rgba(255, 255, 255, 0.82);
+        font-size: clamp(1rem, 2.2vw, 1.18rem);
+        font-weight: 300;
+        line-height: 1.65;
+        max-width: 540px;
+        margin-bottom: 2.2rem;
+      }
+      .hero-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-bottom: 2.4rem;
+      }
+      .badge {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.9);
+        padding: 0.38rem 0.9rem;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+      }
+      .badge i {
+        color: var(--blue-lt);
+      }
+      .hero-actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .btn-primary {
+        background: var(--blue);
+        color: var(--white);
+        padding: 0.85rem 2rem;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        border: 2px solid var(--blue);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition:
+          background var(--transition),
+          transform var(--transition),
+          box-shadow var(--transition);
+        box-shadow: 0 4px 20px rgba(49, 130, 206, 0.4);
+      }
+      .btn-primary:hover {
+        background: var(--blue-lt);
+        border-color: var(--blue-lt);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 28px rgba(49, 130, 206, 0.5);
+      }
+      .btn-outline {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        color: var(--white);
+        padding: 0.85rem 2rem;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: transparent;
+        transition:
+          border-color var(--transition),
+          background var(--transition),
+          transform var(--transition);
+      }
+      .btn-outline:hover {
+        border-color: var(--white);
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+      }
+      .hero-scroll {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        z-index: 2;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        animation: bounce 2s infinite;
+      }
+      .hero-scroll i {
+        font-size: 1.1rem;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(6px);
+        }
+      }
+
+      /* ── SECTION SHELL ────────────────────────────── */
+      section {
+        padding: clamp(3.5rem, 8vw, 6rem) clamp(1.5rem, 6vw, 5rem);
+      }
+      .section-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--blue);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 0.9rem;
+      }
+      .section-label::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: var(--blue);
+        border-radius: 2px;
+      }
+      .section-title {
+        font-family: var(--ff-head);
+        font-size: clamp(1.9rem, 4vw, 2.9rem);
+        font-weight: 800;
+        color: var(--navy);
+        line-height: 1.1;
+        margin-bottom: 1rem;
+      }
+      .section-body {
+        color: var(--text-lt);
+        font-size: 1.02rem;
+        max-width: 640px;
+        line-height: 1.7;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-center .section-label {
+        justify-content: center;
+      }
+      .text-center .section-label::before {
+        display: none;
+      }
+      .text-center .section-body {
+        margin: 0 auto;
+      }
+
+      /* ── KPI STRIP ────────────────────────────────── */
+      .kpi-strip {
+        background: var(--navy);
+        padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 6vw, 5rem);
+      }
+      .kpi-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .kpi-card {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 2.2rem 2rem;
+        text-align: center;
+        transition: background var(--transition);
+      }
+      .kpi-card:hover {
+        background: rgba(49, 130, 206, 0.12);
+      }
+      .kpi-num {
+        font-family: var(--ff-head);
+        font-size: clamp(2.8rem, 5vw, 4rem);
+        font-weight: 800;
+        color: var(--white);
+        line-height: 1;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.3rem;
+      }
+      .kpi-num span {
+        color: var(--blue-lt);
+      }
+      .kpi-label {
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 0.82rem;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        line-height: 1.4;
+      }
+      .kpi-icon {
+        color: var(--blue-lt);
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+        opacity: 0.8;
+      }
+
+      /* ── PRODUCCIÓN (CARDS) ───────────────────────── */
+      .prod-section {
+        background: var(--ice);
+      }
+      .prod-intro {
+        max-width: 1100px;
+        margin: 0 auto 3rem;
+      }
+      .prod-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.75rem;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .prod-card {
+        background: var(--white);
+        border-radius: var(--r-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+        border: 1px solid var(--slate);
+        transition:
+          box-shadow var(--transition),
+          transform var(--transition);
+        display: flex;
+        flex-direction: column;
+      }
+      .prod-card:hover {
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-4px);
+      }
+      .prod-card-img {
+        width: 100%;
+        height: 220px;
+        object-fit: contain;
+        background: #f0f4f8;
+        padding: 1.5rem;
+      }
+      .prod-card-body {
+        padding: 1.6rem 1.8rem 2rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .prod-card-tag {
+        display: inline-block;
+        background: var(--blue-xlt);
+        color: var(--blue);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        margin-bottom: 1rem;
+      }
+      .prod-card h3 {
+        font-family: var(--ff-head);
+        font-size: 1.55rem;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 0.6rem;
+        line-height: 1.1;
+      }
+      .prod-card p {
+        color: var(--text-lt);
+        font-size: 0.92rem;
+        line-height: 1.65;
+        margin-bottom: 1.2rem;
+      }
+      .prod-specs {
+        margin-top: auto;
+        border-top: 1px solid var(--slate);
+        padding-top: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .prod-spec {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.84rem;
+        color: var(--text-lt);
+      }
+      .prod-spec i {
+        color: var(--blue);
+        width: 16px;
+        text-align: center;
+        flex-shrink: 0;
+      }
+      .prod-spec strong {
+        color: var(--text);
+      }
+
+      /* ── GUANTEO ──────────────────────────────────── */
+      .guanteo-section {
+        background: var(--navy-dk);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .guanteo-text {
+        padding: clamp(3rem, 7vw, 6rem) clamp(2rem, 5vw, 4.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .guanteo-text .section-label {
+        color: var(--blue-lt);
+      }
+      .guanteo-text .section-label::before {
+        background: var(--blue-lt);
+      }
+      .guanteo-text .section-title {
+        color: var(--white);
+      }
+      .guanteo-text .section-body {
+        color: rgba(255, 255, 255, 0.75);
+        max-width: 100%;
+      }
+      .guanteo-timeline {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .guanteo-step {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+      .guanteo-dot {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(49, 130, 206, 0.2);
+        border: 2px solid var(--blue-lt);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 0.15rem;
+      }
+      .guanteo-dot i {
+        color: var(--blue-lt);
+        font-size: 0.8rem;
+      }
+      .guanteo-step-text h4 {
+        color: var(--white);
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+      }
+      .guanteo-step-text p {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.85rem;
+        line-height: 1.55;
+      }
+      .guanteo-imgs {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+      }
+      .guanteo-imgs img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      @media (max-width: 768px) {
+        .guanteo-section {
+          grid-template-columns: 1fr;
+        }
+        .guanteo-imgs {
+          grid-template-rows: auto;
+          grid-template-columns: 1fr 1fr;
+          height: 260px;
+        }
+      }
+
+      /* ── IMPRESIÓN ────────────────────────────────── */
+      .print-section {
+        background: var(--white);
+      }
+      .print-intro {
+        max-width: 1100px;
+        margin: 0 auto 3rem;
+      }
+      .print-layout {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        align-items: start;
+      }
+      @media (max-width: 900px) {
+        .print-layout {
+          grid-template-columns: 1fr;
+        }
+      }
+      .print-card {
+        background: var(--ice);
+        border-radius: var(--r-lg);
+        border: 1px solid var(--slate);
+        box-shadow: var(--shadow-sm);
+        overflow: hidden;
+        transition:
+          box-shadow var(--transition),
+          transform var(--transition);
+      }
+      .print-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-3px);
+      }
+      .print-card-imgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 200px;
+        overflow: hidden;
+        gap: 2px;
+      }
+      .print-card-imgs img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .print-card-body {
+        padding: 1.6rem 1.8rem 2rem;
+      }
+      .print-card h3 {
+        font-family: var(--ff-head);
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 0.4rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .print-card h3 i {
+        color: var(--blue);
+        font-size: 1.1rem;
+      }
+      .print-card .brand-tag {
+        display: inline-block;
+        background: var(--navy);
+        color: var(--white);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 0.2rem 0.65rem;
+        border-radius: 4px;
+        margin-bottom: 0.9rem;
+      }
+      .print-card p {
+        color: var(--text-lt);
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      .print-specs {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+      }
+      .print-spec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.82rem;
+        padding: 0.45rem 0.65rem;
+        background: var(--white);
+        border-radius: 6px;
+        border: 1px solid var(--slate);
+      }
+      .print-spec .ps-label {
+        color: var(--muted);
+        font-weight: 500;
+      }
+      .print-spec .ps-val {
+        color: var(--navy);
+        font-weight: 700;
+      }
+
+      /* ── INOCUIDAD ────────────────────────────────── */
+      .innocuity-section {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-md) 100%
+        );
+        padding: clamp(3.5rem, 7vw, 6rem) clamp(1.5rem, 6vw, 5rem);
+      }
+      .innocuity-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .innocuity-section .section-label {
+        color: var(--blue-lt);
+      }
+      .innocuity-section .section-label::before {
+        background: var(--blue-lt);
+      }
+      .innocuity-section .section-title {
+        color: var(--white);
+      }
+      .innocuity-section .section-body {
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .innocuity-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin-top: 3rem;
+        align-items: center;
+      }
+      @media (max-width: 800px) {
+        .innocuity-layout {
+          grid-template-columns: 1fr;
+        }
+      }
+      .innocuity-photo {
+        border-radius: var(--r-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow-lg);
+      }
+      .innocuity-photo img {
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+        display: block;
+        filter: brightness(0.9) contrast(1.05);
+      }
+      .innocuity-pillars {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+      }
+      .pillar {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: var(--r);
+        padding: 1.3rem 1.2rem;
+        transition: background var(--transition);
+      }
+      .pillar:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .pillar-icon {
+        color: var(--blue-lt);
+        font-size: 1.4rem;
+        margin-bottom: 0.7rem;
+      }
+      .pillar h4 {
+        color: var(--white);
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+      }
+      .pillar p {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.82rem;
+        line-height: 1.5;
+      }
+
+      /* ── CONTACT ──────────────────────────────────── */
+      .contact-section {
+        background: var(--ice);
+      }
+      .contact-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        gap: 4rem;
+        align-items: start;
+      }
+      @media (max-width: 800px) {
+        .contact-wrapper {
+          grid-template-columns: 1fr;
+          gap: 2.5rem;
+        }
+      }
+      .contact-info .section-title {
+        margin-bottom: 1.5rem;
+      }
+      .contact-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        margin-top: 1.8rem;
+      }
+      .contact-item {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+      .contact-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        background: var(--navy);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .contact-icon i {
+        color: var(--blue-lt);
+        font-size: 1rem;
+      }
+      .contact-item-text {
+      }
+      .contact-item-text .ci-label {
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: var(--muted);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 0.2rem;
+      }
+      .contact-item-text a,
+      .contact-item-text span {
+        color: var(--text);
+        font-size: 0.92rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color var(--transition);
+        display: block;
+        line-height: 1.45;
+      }
+      .contact-item-text a:hover {
+        color: var(--blue);
+      }
+      .contact-form {
+        background: var(--white);
+        border-radius: var(--r-lg);
+        padding: 2.2rem 2rem;
+        box-shadow: var(--shadow-md);
+        border: 1px solid var(--slate);
+      }
+      .contact-form h3 {
+        font-family: var(--ff-head);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 1.5rem;
+      }
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 520px) {
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin-bottom: 1rem;
+      }
+      .form-group label {
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--text-lt);
+        letter-spacing: 0.04em;
+      }
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        border: 1.5px solid var(--slate);
+        border-radius: 8px;
+        padding: 0.72rem 1rem;
+        font-family: var(--ff-body);
+        font-size: 0.9rem;
+        color: var(--text);
+        background: var(--ice);
+        transition:
+          border-color var(--transition),
+          box-shadow var(--transition);
+        outline: none;
+        resize: vertical;
+      }
+      .form-group input:focus,
+      .form-group textarea:focus,
+      .form-group select:focus {
+        border-color: var(--blue);
+        box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+        background: var(--white);
+      }
+      .form-group textarea {
+        min-height: 110px;
+      }
+      .btn-submit {
+        width: 100%;
+        background: var(--navy);
+        color: var(--white);
+        border: none;
+        cursor: pointer;
+        padding: 0.9rem 2rem;
+        border-radius: 8px;
+        font-family: var(--ff-body);
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        transition:
+          background var(--transition),
+          transform var(--transition),
+          box-shadow var(--transition);
+        box-shadow: 0 4px 16px rgba(26, 54, 93, 0.3);
+      }
+      .btn-submit:hover {
+        background: var(--navy-md);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(26, 54, 93, 0.35);
+      }
+
+      /* ── FOOTER ───────────────────────────────────── */
+      footer {
+        background: var(--navy-dk);
+        padding: 3rem clamp(1.5rem, 6vw, 5rem) 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+      }
+      .footer-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 3rem;
+      }
+      @media (max-width: 768px) {
+        .footer-inner {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+      .footer-brand .nav-logo {
+        display: block;
+        margin-bottom: 0.75rem;
+        font-size: 1.35rem;
+      }
+      .footer-brand p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.85rem;
+        line-height: 1.6;
+        max-width: 280px;
+      }
+      .footer-col h5 {
+        color: var(--white);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .footer-col ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+      }
+      .footer-col ul a {
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: color var(--transition);
+      }
+      .footer-col ul a:hover {
+        color: var(--blue-lt);
+      }
+      .footer-bottom {
+        max-width: 1100px;
+        margin: 2.5rem auto 0;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+      .footer-bottom p {
+        color: rgba(255, 255, 255, 0.35);
+        font-size: 0.78rem;
+      }
+      .footer-flag {
+        color: rgba(255, 255, 255, 0.35);
+        font-size: 0.78rem;
+      }
+
+      /* ── UTILS ────────────────────────────────────── */
+      .divider {
+        width: 48px;
+        height: 3px;
+        background: var(--blue);
+        border-radius: 2px;
+        margin-bottom: 1.2rem;
+      }
+      @media (max-width: 600px) {
+        section {
+          padding: 3rem 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ══ NAV ═══════════════════════════════════════ -->
+    <nav class="nav">
+      <a href="#" class="nav-logo">Inter<span>plásticos</span></a>
+      <ul class="nav-links">
+        <li><a href="#produccion">Producción</a></li>
+        <li><a href="#impresion">Impresión</a></li>
+        <li><a href="#inocuidad">Inocuidad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="nav-cta"
+        ><i class="fa-solid fa-file-lines"></i> Solicitar Cotización</a
+      >
+    </nav>
+
+    <!-- ══ HERO ══════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <i class="fa-solid fa-circle-check"></i>
+          Capital 100% Mexicano — Desde 1970
+        </div>
+        <h1>
+          Líderes en<br /><span class="hl">Empaques Plásticos</span><br />de
+          Alta Gama
+        </h1>
+        <p class="hero-sub">
+          Fabricamos soluciones de empaque avanzadas para las industrias de la
+          salud, higiene y belleza. Más de 50 años de experiencia, tecnología
+          europea de punta y un compromiso inquebrantable con la calidad y la
+          inocuidad.
+        </p>
+        <div class="hero-badges">
+          <div class="badge">
+            <i class="fa-solid fa-industry"></i> Blow Film & Cast Film
+          </div>
+          <div class="badge">
+            <i class="fa-solid fa-hand-sparkles"></i> Línea de Guanteo
+            Especializado
+          </div>
+          <div class="badge">
+            <i class="fa-solid fa-print"></i> Impresión Flexográfica &amp;
+            Offset
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn-primary"
+            ><i class="fa-solid fa-envelope"></i> Solicitar Cotización</a
+          >
+          <a href="#produccion" class="btn-outline"
+            ><i class="fa-solid fa-arrow-down"></i> Ver Capacidades</a
+          >
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <i class="fa-solid fa-chevron-down"></i>
+        Explorar
+      </div>
+    </section>
+
+    <!-- ══ KPI STRIP ══════════════════════════════════ -->
+    <div class="kpi-strip">
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="kpi-num"><span>+</span>50</div>
+          <div class="kpi-label">Años de Experiencia<br />en el Mercado</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fa-solid fa-weight-hanging"></i></div>
+          <div class="kpi-num"><span>+</span>420</div>
+          <div class="kpi-label">
+            Toneladas de Capacidad<br />Mensual Combinada
+          </div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fa-solid fa-gear"></i></div>
+          <div class="kpi-num">5</div>
+          <div class="kpi-label">Líneas de Extrusión<br />en Operación</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fa-solid fa-flag"></i></div>
+          <div class="kpi-num">3</div>
+          <div class="kpi-label">
+            Marcas Europeas de<br />Impresión de Alta Gama
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ PRODUCCIÓN ════════════════════════════════ -->
+    <section class="prod-section" id="produccion">
+      <div class="prod-intro">
+        <span class="section-label">Core de Producción</span>
+        <h2 class="section-title">Maquinaria y Capacidad Instalada</h2>
+        <p class="section-body">
+          Nuestra planta en Ciudad de México opera con tecnología de extrusión
+          de vanguardia para satisfacer los más exigentes volúmenes y
+          especificaciones del mercado industrial.
+        </p>
+        <div class="divider"></div>
+      </div>
+      <div class="prod-grid">
+        <!-- BLOW FILM -->
+        <article class="prod-card">
+          <img
+            class="prod-card-img"
+            src="media/blowfilm.png"
+            alt="Línea de extrusión Blow Film – Película tubular Interplásticos"
+          />
+          <div class="prod-card-body">
+            <span class="prod-card-tag">Extrusión</span>
+            <h3>
+              Película Tubular<br /><em
+                style="
+                  font-style: normal;
+                  font-size: 0.85em;
+                  color: var(--blue);
+                "
+                >Blow Film</em
+              >
+            </h3>
+            <p>
+              Producimos película tubular de baja y alta densidad con
+              coextrusión multicapa, ideales para empaques con requerimientos
+              específicos de barrera, resistencia mecánica y sellabilidad.
+            </p>
+            <div class="prod-specs">
+              <div class="prod-spec">
+                <i class="fa-solid fa-cogs"></i>
+                <span
+                  ><strong>3</strong> Extrusores LDPE +
+                  <strong>2</strong> Coextrusores multicapa</span
+                >
+              </div>
+              <div class="prod-spec">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <span>Capacidad: <strong>120 t/mes</strong></span>
+              </div>
+              <div class="prod-spec">
+                <i class="fa-solid fa-ruler-horizontal"></i>
+                <span>Anchos: <strong>24 cm – 110 cm</strong></span>
+              </div>
+              <div class="prod-spec">
+                <i class="fa-solid fa-layer-group"></i>
+                <span
+                  >Baja densidad 1 capa y coextrusión de 2 capas; alta densidad
+                  2 capas</span
+                >
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CAST FILM -->
+        <article class="prod-card">
+          <img
+            class="prod-card-img"
+            src="media/castfilm.png"
+            alt="Línea de extrusión Cast Film – Película plana Interplásticos"
+          />
+          <div class="prod-card-body">
+            <span class="prod-card-tag">Extrusión</span>
+            <h3>
+              Película Plana<br /><em
+                style="
+                  font-style: normal;
+                  font-size: 0.85em;
+                  color: var(--blue);
+                "
+                >Cast Film</em
+              >
+            </h3>
+            <p>
+              Nuestra línea de película plana produce materiales con excelente
+              uniformidad de calibre y brillo superficial superior, perfectos
+              para aplicaciones de termoformado y empaque médico.
+            </p>
+            <div class="prod-specs">
+              <div class="prod-spec">
+                <i class="fa-solid fa-cogs"></i>
+                <span><strong>2</strong> Extrusores de baja densidad</span>
+              </div>
+              <div class="prod-spec">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <span>Capacidad: <strong>80 t/mes</strong></span>
+              </div>
+              <div class="prod-spec">
+                <i class="fa-solid fa-ruler-horizontal"></i>
+                <span>Anchos: <strong>10 cm – 125 cm</strong></span>
+              </div>
+              <div class="prod-spec">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Óptima para empaque farmacéutico y cosmético</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══ GUANTEO ════════════════════════════════════ -->
+    <div class="guanteo-section" id="guanteo">
+      <div class="guanteo-text">
+        <span class="section-label">Línea Especializada</span>
+        <h2 class="section-title">División de Guanteo Avanzado</h2>
+        <p class="section-body">
+          Una historia de más de cinco décadas en la fabricación de guantes
+          plásticos que comenzó con guantes de baja densidad y ha evolucionado
+          hacia productos de alta sofisticación para los sectores de la salud y
+          la estética.
+        </p>
+        <div class="guanteo-timeline">
+          <div class="guanteo-step">
+            <div class="guanteo-dot"><i class="fa-solid fa-seedling"></i></div>
+            <div class="guanteo-step-text">
+              <h4>Los Orígenes — 1970</h4>
+              <p>
+                Interplásticos nació fabricando guantes desechables de baja
+                densidad, sentando las bases de una tradición de calidad que se
+                mantiene hasta hoy.
+              </p>
+            </div>
+          </div>
+          <div class="guanteo-step">
+            <div class="guanteo-dot">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="guanteo-step-text">
+              <h4>Evolución Técnica</h4>
+              <p>
+                Con el paso de los años, hemos desarrollado formulaciones y
+                procesos de manufactura que dotan a nuestros guantes de mayor
+                resistencia estructural y una textura táctil premium.
+              </p>
+            </div>
+          </div>
+          <div class="guanteo-step">
+            <div class="guanteo-dot"><i class="fa-solid fa-star"></i></div>
+            <div class="guanteo-step-text">
+              <h4>Mercado Actual — Salud &amp; Estética</h4>
+              <p>
+                Hoy abastecemos a clínicas, laboratorios, salones de belleza y
+                hospitales con guantes de alta sofisticación que cumplen los más
+                estrictos protocolos de higiene.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="guanteo-imgs">
+        <img
+          src="media/guanteo-02.png"
+          alt="Personal con guantes Interplásticos en ambiente controlado"
+        />
+        <img
+          src="media/gunateo.png"
+          alt="Maquinaria de guanteo Interplásticos"
+        />
+      </div>
+    </div>
+
+    <!-- ══ IMPRESIÓN ══════════════════════════════════ -->
+    <section class="print-section" id="impresion">
+      <div class="print-intro">
+        <span class="section-label">División de Impresión</span>
+        <h2 class="section-title">
+          Reproducción de Color de<br />Precisión Europea
+        </h2>
+        <p class="section-body">
+          Contamos con una flota de impresoras de clase mundial —Windmöller
+          &amp; Hölscher, OMAL, COMEXI y Heidelberg— que garantizan
+          reproducibilidad cromática y calidad de registro insuperable a escala
+          industrial.
+        </p>
+        <div class="divider"></div>
+      </div>
+      <div class="print-layout">
+        <!-- FLEXOGRAFÍA -->
+        <article class="print-card">
+          <div class="print-card-imgs">
+            <img
+              src="media/impresion.jpg"
+              alt="Operadora ajustando rodillo de impresión flexográfica"
+            />
+            <img
+              src="media/04.jpg"
+              alt="Control de color en impresión flexográfica"
+            />
+          </div>
+          <div class="print-card-body">
+            <span class="brand-tag"
+              >Windmöller &amp; Hölscher · OMAL · COMEXI</span
+            >
+            <h3>
+              <i class="fa-solid fa-print"></i> Flexografía de Alta Velocidad
+            </h3>
+            <p>
+              Nuestras tres impresoras flexográficas de tecnología europea
+              operan a alta velocidad con registro de precisión micromètrica,
+              permitiendo tiradas de gran volumen sin sacrificar la fidelidad
+              cromática.
+            </p>
+            <div class="print-specs">
+              <div class="print-spec">
+                <span class="ps-label">Equipos disponibles</span
+                ><span class="ps-val">3 Impresoras</span>
+              </div>
+              <div class="print-spec">
+                <span class="ps-label">Tintas máx. (W&amp;H / OMAL)</span
+                ><span class="ps-val">6 tintas c/u</span>
+              </div>
+              <div class="print-spec">
+                <span class="ps-label">Tintas máx. (COMEXI)</span
+                ><span class="ps-val">4 tintas</span>
+              </div>
+              <div class="print-spec">
+                <span class="ps-label">Capacidad mensual</span
+                ><span class="ps-val">220 t/mes</span>
+              </div>
+              <div class="print-spec">
+                <span class="ps-label">Rango de anchos</span
+                ><span class="ps-val">24 cm – 110 cm</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- OFFSET -->
+        <article class="print-card">
+          <div class="print-card-imgs">
+            <img
+              src="media/impresion-2.jpg"
+              alt="Técnico revisando planchas de impresión offset"
+            />
+            <img
+              src="media/003.jpg"
+              alt="Prensa Heidelberg en operación – Interplásticos"
+            />
+          </div>
+          <div class="print-card-body">
+            <span class="brand-tag">Heidelberg</span>
+            <h3>
+              <i class="fa-solid fa-layer-group"></i> Impresión Offset de
+              Precisión
+            </h3>
+            <p>
+              Nuestra prensa Heidelberg de gran formato entrega una calidad de
+              imprenta comparable a la de las publicaciones de alto nivel, con
+              barniz de máquina integrado para acabados que distinguen la marca
+              en el punto de venta.
+            </p>
+            <div class="print-specs">
+              <div class="print-spec">
+                <span class="ps-label">Equipo</span
+                ><span class="ps-val">1 Heidelberg</span>
+              </div>
+              <div class="print-spec">
+                <span class="ps-label">Tintas + acabado</span
+                ><span class="ps-val">9 tintas + barniz</span>
+              </div>
+              <div class="print-spec">
+                <span class="ps-label">Velocidad</span
+                ><span class="ps-val">10,000 hojas/hr</span>
+              </div>
+              <div class="print-spec">
+                <span class="ps-label">Formato de pliego</span
+                ><span class="ps-val">72 × 102 cm</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══ INOCUIDAD ══════════════════════════════════ -->
+    <section class="innocuity-section" id="inocuidad">
+      <div class="innocuity-inner">
+        <span class="section-label">Infraestructura e Inocuidad</span>
+        <h2 class="section-title">
+          Producción Bajo los Más Altos<br />Estándares de Higiene
+        </h2>
+        <p class="section-body">
+          Nuestros procesos productivos se rigen por protocolos estrictos de
+          control de calidad e inocuidad, diseñados para satisfacer las
+          exigencias de los sectores farmacéutico, cosmético y de la salud.
+        </p>
+        <div class="innocuity-layout">
+          <div class="innocuity-photo">
+            <img
+              src="media/guanteo-02.png"
+              alt="Personal Interplásticos operando en ambiente controlado con equipo de protección completo"
+            />
+          </div>
+          <div class="innocuity-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+              <h4>Equipo de Protección Completo</h4>
+              <p>
+                Todo el personal técnico porta uniformes quirúrgicos, cofias,
+                cubrebocas y guantes para garantizar la total integridad del
+                producto.
+              </p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fa-solid fa-wind"></i></div>
+              <h4>Ambientes Controlados</h4>
+              <p>
+                Áreas de producción con control de partículas, temperatura y
+                humedad que aseguran condiciones de manufactura limpias y
+                reproducibles.
+              </p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <h4>Control de Calidad Riguroso</h4>
+              <p>
+                Inspección en línea y pruebas de laboratorio en cada lote para
+                verificar propiedades mecánicas, de barrera y de sellado.
+              </p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <h4>Sectores Exigentes</h4>
+              <p>
+                Proveemos a la industria farmacéutica, cosmética y hospitalaria
+                con empaques que cumplen las normativas de inocuidad más
+                rigurosas del mercado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACTO ═══════════════════════════════════ -->
+    <section class="contact-section" id="contacto">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <span class="section-label">Contacto</span>
+          <h2 class="section-title">Hablemos de su Proyecto</h2>
+          <p class="section-body">
+            Estamos listos para desarrollar la solución de empaque ideal para su
+            empresa. Comparta sus requerimientos y nuestro equipo
+            técnico-comercial le responderá en menos de 24 horas.
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-item-text">
+                <div class="ci-label">Correo Corporativo</div>
+                <a href="mailto:contacto@interplasticos.com"
+                  >contacto@interplasticos.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-item-text">
+                <div class="ci-label">Planta y Oficinas</div>
+                <span
+                  >Lago Chiem 28, San Juanico,<br />Miguel Hidalgo, 11440<br />Ciudad
+                  de México, CDMX</span
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="contact-item-text">
+                <div class="ci-label">Horario de Atención</div>
+                <span>Lunes a Viernes · 8:00 – 18:00 hrs</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-brands fa-mexico"></i>
+              </div>
+              <div class="contact-item-text">
+                <div class="ci-label">Capital</div>
+                <span>Empresa 100% mexicana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>
+            <i
+              class="fa-solid fa-file-invoice"
+              style="color: var(--blue); margin-right: 0.5rem"
+            ></i
+            >Solicitar Cotización Industrial
+          </h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" placeholder="Ej. Ana García" />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa *</label>
+              <input type="text" id="empresa" placeholder="Razón social" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="correo">Correo electrónico *</label>
+              <input
+                type="email"
+                id="correo"
+                placeholder="correo@empresa.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="sector">Sector</label>
+              <select id="sector">
+                <option value="">Seleccionar…</option>
+                <option>Farmacéutico / Médico</option>
+                <option>Cosmético / Belleza</option>
+                <option>Higiene Personal</option>
+                <option>Alimentos y Bebidas</option>
+                <option>Industrial / Manufacturero</option>
+                <option>Otro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Descripción del requerimiento *</label>
+            <textarea
+              id="mensaje"
+              placeholder="Describa el tipo de empaque, volumen estimado, medidas, número de tintas y cualquier requerimiento especial de inocuidad o certificación…"
+            ></textarea>
+          </div>
+          <button class="btn-submit" type="button">
+            <i class="fa-solid fa-paper-plane"></i> Enviar Solicitud de
+            Cotización
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ════════════════════════════════════ -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Inter<span>plásticos</span></a>
+          <p>
+            Empresa mexicana de capital nacional con más de 50 años fabricando
+            empaques plásticos de alta calidad para la industria de la salud,
+            higiene y belleza.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Líneas de Producción</h5>
+          <ul>
+            <li><a href="#produccion">Película Tubular (Blow Film)</a></li>
+            <li><a href="#produccion">Película Plana (Cast Film)</a></li>
+            <li><a href="#guanteo">Línea de Guanteo</a></li>
+            <li><a href="#impresion">Flexografía Industrial</a></li>
+            <li><a href="#impresion">Impresión Offset Heidelberg</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Industrias Atendidas</h5>
+          <ul>
+            <li><a href="#contacto">Farmacéutica y Médica</a></li>
+            <li><a href="#contacto">Cosmética y Belleza</a></li>
+            <li><a href="#contacto">Higiene Personal</a></li>
+            <li><a href="#contacto">Alimentos y Bebidas</a></li>
+            <li><a href="#contacto">Manufactura Industrial</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2025 Interplásticos S.A. de C.V. · Todos los derechos reservados.
+        </p>
+        <span class="footer-flag">Designed & Developed by cote © 2026</span>
+      </div>
+    </footer>
+  </body>
+</html>
